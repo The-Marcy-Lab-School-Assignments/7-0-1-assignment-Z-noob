@@ -3,17 +3,22 @@ const colors = {
   white: 'navbar-default'
 }
 
-function NavBar({ color, title }) {
+function NavBar() {
   return (
-    <nav className={`navbar ${colors[color]}`}>
-      <div className='container-fluid'>
-        <div className='navbar-header'>
-          <div className='navbar-brand'>
-            {title}
-          </div>
-        </div>
+    <nav>
+      <div className="navtext">
+        <h1>Giphy Search</h1>
       </div>
     </nav>
+    // <nav className={`navbar ${colors[color]}`}>
+    //   <div className='container-fluid'>
+    //     <div className='navbar-header'>
+    //       <div className='navbar-brand'>
+    //         {title}
+    //       </div>
+    //     </div>
+    //   </div>
+    // </nav> { color, title }
   )
 }
 
